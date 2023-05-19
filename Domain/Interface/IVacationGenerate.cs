@@ -1,15 +1,11 @@
-﻿using ConsoleAppGenerateVacation.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ConsoleAppGenerateVacation.Domain.Interface
+﻿namespace ConsoleAppGenerateVacation.Domain.Interface
 {
+    //Интерфейс для генератора отпуско
     interface IVacationGenerate
     {
-        public List<DaysVacation> GenerateVacationEmployee();
+        //Сначало сделал метод более логичным 
+        public void GenerateVacationEmployee();
+        //Метод который генерирует рандомную дату для вычисления отпуска
         public DateTime GetRandomStartDate(DateTime currentDate);
     }
 }
